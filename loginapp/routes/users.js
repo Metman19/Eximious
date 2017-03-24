@@ -25,6 +25,11 @@ router.get('/contact', function(req, res){
 	res.render('contact');
 });
 
+// Profile
+router.get('/profile', function(req, res){
+	res.render('profile');
+});
+
 // Register User
 router.post('/register', function(req, res){
 	var name = req.body.name;
