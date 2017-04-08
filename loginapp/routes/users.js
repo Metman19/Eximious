@@ -15,19 +15,14 @@ router.get('/login', function(req, res){
 	res.render('login');
 });
 
-// About
-router.get('/about', function(req, res){
-	res.render('about');
+// Wine
+router.get('/wine', function(req, res){
+	res.render('wine');
 });
 
 // Contact
 router.get('/contact', function(req, res){
 	res.render('contact');
-});
-
-// Profile
-router.get('/profile', function(req, res){
-	res.render('profile');
 });
 
 // Register User
@@ -89,7 +84,6 @@ passport.use(new LocalStrategy(
    	});
    });
   }));
-
 
 passport.serializeUser(function(user, done) {
   done(null, user.id);

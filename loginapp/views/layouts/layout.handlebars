@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Eximious App/Site</title>
-  <link rel="stylesheet" href="/css/bootstrap.css" />
-  <link rel="stylesheet" href="/css/style.css" />
+	<title>Eximious</title>
+	<link rel="stylesheet" href="/css/bootstrap.css" />
+	<link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
-  <div class="container">
+	<div class="container">
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
             {{#if user}}
               <li role="presentation"><a href="/">Dashboard</a></li>
-              <li role="presentation"><a href="/users/profile">Profile</a></li>
+              <li role="presentation"><a href="/users/wine">Wine</a></li>
+              <li role="presentation"><a href="/users/contact">Contact</a></li>
               <li role="presentation"><a href="/users/logout">Logout</a></li>
-              <li role="presentation"><a href="/users/about">About</a></li>
-              <li role="presentation"><a href="/users/contact">Contact Us</a></li>
             {{else}}
               <li role="presentation"><a href="/users/login">Login</a></li>
               <li role="presentation"><a href="/users/register">Register</a></li>
-               <li role="presentation"><a href="/auth/facebook" class="btn btn-primary"><span class="fa fa-facebook"></span> Facebook</a></li>
             {{/if}}
           </ul>
         </nav>
-        <img src="../images/eximious.jpg">
-        <h3 class="text-muted">Welcome to Eximious Site</h3>
-
+        <h3 class="text-muted">Eximious</h3>
       </div>
 
 
@@ -50,7 +46,7 @@
       </div>
 
       <footer class="footer">
-        <p>&copy; 2017 Eximious, Inc.</p>
+        <p>&copy; 2017 Eximious</p>
       </footer>
 
     </div> <!-- /container -->
