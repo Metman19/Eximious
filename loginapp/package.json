@@ -24,6 +24,8 @@
     "passport": "*",
     "passport-facebook": "^2.1.1",
     "passport-http": "*",
-    "passport-local": "*"
+    "passport-local": "*",
+    "passport-twitter": "^1.0.3",
+    "serve-favicon": "~2.3.0"
   }
 }
