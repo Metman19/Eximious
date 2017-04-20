@@ -23,6 +23,11 @@ router.get('/logout', function(req, res) {
   res.redirect('/');
 });
 
+router.get('/contact', function(req, res) {
+  req.logout();
+  res.redirect('/contact');
+});
+
 router.post('/signup', passport.authenticate('local-signup', {
   successRedirect: '/profile',
   failureRedirect: '/signup',
@@ -45,6 +50,13 @@ router.get('/auth/facebook/callback', passport.authenticate('facebook', {
 router.get('/auth/twitter', passport.authenticate('twitter'));
 
 router.get('/auth/twitter/callback', passport.authenticate('twitter', {
+  successRedirect: '/profile',
+  failureRedirect: '/',
+}));
+
+router.get('/auth/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
+
+router.get('/auth/google/callback', passport.authenticate('google', {
   successRedirect: '/profile',
   failureRedirect: '/',
 }));
